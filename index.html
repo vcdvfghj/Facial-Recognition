@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
    <link rel="stylesheet" href="style.css">
@@ -18,7 +18,6 @@
     <center>
       <h1 class="btn btn-default heading" id="title"> Image Recognizer</h1>
       <br><br>
-
       <p style="font-size: 22px;">Model is trained to identify the following people: </p>
       <b style="color:blue;">
         Me
@@ -33,7 +32,13 @@
       <br>
       <label id="webcam_label">Webcam View - </label>
       <div id="camera"></div>
-      <br> <br>       <br><br>
+      <br><br>
+      <div id="captured_image"></div>
+      <br><br><br>
+      <button class="btn btn-success" onclick="take_Snapshot()">Capture Image</button>
+      <br>
+      <button class="btn btn-info">Identify Image</button>
+      <br>
       <br>
       <br>
       <p style="font-size: 22px;">Object :<span id="identified_object"></span>  </p>

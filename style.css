@@ -10,7 +10,7 @@
     font-size:x-large;
 
 }
-#camera{
+#camera,#captured_image{
     border-color: aliceblue;
     border:2px solid;
     width: 350px;
